@@ -2,12 +2,12 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    height: 100vh; /* Giver body højden af skærmen */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;  /* Justering af sektioner til toppen */
-    align-items: center;  /* Centerer sektionerne horisontalt */
-    overflow: auto; /* Muliggør scrolling */
+    justify-content: flex-start;
+    align-items: center;
+    overflow: auto;
 }
 
 /* Navigation Bar */
@@ -49,7 +49,7 @@ nav ul li a {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding-top: 60px; /* For at sikre, at navbaren ikke dækker noget */
+    padding-top: 60px;
 }
 
 /* Centrer indholdet */
@@ -58,22 +58,33 @@ nav ul li a {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    overflow-y: auto; /* Gør det muligt at rulle, hvis indholdet er for langt */
-    max-height: 90vh; /* Giver plads til scrolling */
+    overflow-y: auto;
+    max-height: 90vh;
 }
 
-/* Styling for Regler sektionen */
-#regler {
-    padding-top: 100px; /* Justering for sektionen */
+/* Styling for Ansøgninger sektionen */
+#ansøgninger iframe {
+    width: 100%;
+    height: 1200px;
+    border: none;
 }
 
-/* Gør teksten nemmere at læse */
-h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+#ansøgninger ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
 }
 
-p {
+#ansøgninger ul li {
+    margin: 10px 0;
+}
+
+#ansøgninger ul li a {
+    color: #ff6600;
+    text-decoration: none;
     font-size: 18px;
-    line-height: 1.6;
+}
+
+#ansøgninger ul li a:hover {
+    text-decoration: underline;
 }
