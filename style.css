@@ -1,0 +1,79 @@
+/* Grundlæggende styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh; /* Giver body højden af skærmen */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;  /* Justering af sektioner til toppen */
+    align-items: center;  /* Centerer sektionerne horisontalt */
+    overflow: auto; /* Muliggør scrolling */
+}
+
+/* Navigation Bar */
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Baggrund for sektionerne */
+.background {
+    background-image: url('https://cdn.discordapp.com/attachments/1081307866046152766/1334888784302440448/fivem_billede.png?ex=679e2b8f&is=679cda0f&hm=23b00be752e9212bf94d2253bd702032bbeac6e66c3e9070e002a30a00c65855&');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 60px; /* For at sikre, at navbaren ikke dækker noget */
+}
+
+/* Centrer indholdet */
+.content {
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow-y: auto; /* Gør det muligt at rulle, hvis indholdet er for langt */
+    max-height: 90vh; /* Giver plads til scrolling */
+}
+
+/* Styling for Regler sektionen */
+#regler {
+    padding-top: 100px; /* Justering for sektionen */
+}
+
+/* Gør teksten nemmere at læse */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
